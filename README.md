@@ -10,7 +10,7 @@
 
 | 方式 | 地址 |
 |---|---|
-| **直接下载**（推荐） | [Releases](https://github.com/ZhiSHiShuiJIAO/DeepSeek-Harness-QQ/releases/latest) 页面的 `大肥鱼QQ.zip` |
+| **直接下载**（推荐） | [Releases](https://github.com/ZhiSHiShuiJIAO/DeepSeek-Harness-QQ/releases/latest) 页面的 `DaFeiYu-QQ.zip` |
 | 国内备用 | 同上，或从 Gitee 镜像获取 |
 
 当前版本：**v1.2.0** · 约 3.2 MB · Windows 10/11
