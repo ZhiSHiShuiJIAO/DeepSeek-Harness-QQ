@@ -1,0 +1,168 @@
+{
+  "listen_host": "127.0.0.1",
+  "listen_port": 8787,
+  "onebot_api": "http://127.0.0.1:3000",
+  "onebot_token": "",
+  "allowed_users": [],
+  "allowed_groups": [],
+  "bot_name": "DSH",
+  "welcome": "在的，直接说。",
+  "tts": {
+    "enabled": true,
+    "provider": "edge",
+    "voice": "zh-CN-XiaoyiNeural",
+    "rate": "+8%",
+    "pitch": "+4Hz",
+    "volume": "+0%",
+    "max_chars": 300,
+    "keep_files": 50,
+    "send_timeout_sec": 90,
+    "gsv_url": "http://127.0.0.1:9880",
+    "gsv_boot_sec": 180,
+    "gsv_timeout_sec": 240,
+    "ref_audio": "",
+    "prompt_text": "",
+    "tune": {
+      "top_k": 8,
+      "temperature": 0.9,
+      "text_split_method": "cut0",
+      "speed_factor": 1.18,
+      "pitch": 0.0
+    },
+    "mimo_model": "mimo-v2.5-tts-voiceclone",
+    "mimo_voice": "",
+    "mimo_style": "十七岁的少女，声音清亮甜软，说话轻快自然，尾音轻轻上扬带点撒娇，语速稍快。",
+    "mimo_format": "mp3",
+    "mimo_timeout_sec": 120,
+    "mimo_key": ""
+  },
+  "engine": {
+    "kind": "headless",
+    "dsh_exe": "",
+    "cli_js": "",
+    "profile": "headless",
+    "patch": null,
+    "persona_file": "persona.txt",
+    "cwd": "sandbox",
+    "api_key": "",
+    "timeout_sec": 300,
+    "retry": 1
+  },
+  "typing": {
+    "enabled": true,
+    "indicator": true,
+    "first_min_ms": 500,
+    "first_max_ms": 2000,
+    "per_char_ms": 40,
+    "min_ms": 300,
+    "max_ms": 3500
+  },
+  "split": {
+    "enabled": true,
+    "marker": "|||",
+    "max_parts": 4,
+    "delay_ms": 600,
+    "collapse_blank_lines": true,
+    "split_lines": true
+  },
+  "throttle": {
+    "enabled": true,
+    "min_gap_ms": 1500,
+    "max_per_minute": 12,
+    "max_per_hour": 120
+  },
+  "merge": {
+    "enabled": true,
+    "wait_sec": 2.0
+  },
+  "session_rotate": {
+    "enabled": true,
+    "max_turns": 25,
+    "max_minutes": 90,
+    "notify": false
+  },
+  "memory": {
+    "enabled": true,
+    "file": "sandbox/memory.md",
+    "max_chars": 2000
+  },
+  "inbox": {
+    "enabled": true,
+    "dir": "inbox",
+    "max_bytes": 8000000
+  },
+  "sticker": {
+    "enabled": true,
+    "dir": "_sticker"
+  },
+  "sing": {
+    "enabled": true,
+    "dir": "sandbox/sing",
+    "timeout_sec": 600
+  },
+  "proactive": {
+    "enabled": true,
+    "idle_minutes": 28,
+    "jitter": [
+      0.75,
+      2.0
+    ],
+    "cooldown_minutes": 15,
+    "max_per_day": 5,
+    "quiet_hours": [
+      23,
+      8
+    ],
+    "check_interval_sec": 90,
+    "prompt": null
+  },
+  "summary": {
+    "enabled": true,
+    "at": "23:30",
+    "max_input_chars": 4000,
+    "max_lines": 3
+  },
+  "balance": {
+    "enabled": true,
+    "endpoint": "https://api.deepseek.com/user/balance",
+    "timeout_sec": 15
+  },
+  "quote": {
+    "enabled": true
+  },
+  "risk": {
+    "enabled": true,
+    "jitter_ms": 400,
+    "voice_per_hour": 8,
+    "sticker_per_hour": 10,
+    "quiet_hours": [
+      0,
+      7
+    ],
+    "warmup_minutes": 0
+  },
+  "busy": {
+    "enabled": true,
+    "min_gap_sec": 20,
+    "text": "在弄别的，忙完就回你。"
+  },
+  "group": {
+    "enabled": false,
+    "require_at": true,
+    "min_gap_ms": 4000,
+    "max_per_hour": 20
+  },
+  "reminders": {
+    "enabled": true,
+    "file": "reminders.json"
+  },
+  "net": {
+    "enabled": true
+  },
+  "master": {
+    "enabled": true
+  },
+  "update": {
+    "url": "https://raw.githubusercontent.com/ZhiSHiShuiJIAO/DeepSeek-Harness-QQ/main/version.json"
+  }
+}

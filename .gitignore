@@ -1,0 +1,30 @@
+# 运行时产物（不要提交）
+core/config.json
+core/persona.txt
+core/reminders.json
+core/state.json
+core/logs/
+core/sandbox/
+core/_sticker/
+core/inbox/
+core/voice/
+core/__pycache__/
+core/_vendor/**/__pycache__/
+**/__pycache__/
+*.pyc
+
+# 打包产物
+*.zip
+大肥鱼QQ.zip
+
+# 编辑器 / 系统
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# 隐私：永远别把带 Key 的配置提交上去
+config.local.json
+*.key
+*.pem
